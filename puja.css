@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;700&display=swap');
+
+    html {
+        height: 100%;
+        width: 100%;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f0eb; /* Puja color */
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    header {
+      background-color: #ff8c00; /* Puja color */
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      position: relative;
+    }
+    header img {
+      max-height: 100px;
+      max-width: 100%;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+    h1 {
+      margin: 0;
+      font-size: 2em;
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+    }
+    .invitation {
+      background-color: #fff;
+      padding: 20px;
+      margin-top: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      position: relative;
+      overflow: hidden; /* Ensures the moving effect doesn't overflow */
+    }
+    .invitation p {
+      font-size: 18px;
+    }
+    .moving-effect {
+      max-width: 100%;
+      display: block;
+      margin: 0 auto;
+      animation: move 2s infinite alternate;
+    }
+    @keyframes move {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(10px); }
+    }
+
+    .container1 {
+        max-width: 850px;
+        margin: auto;
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        position: relative;
+    }
+
+    .header1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 10px;
+    }
+
+    .header1 img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+    }
+
+    h1 {
+        color: #7b341e;
+        font-size: 26px;
+        margin: 0;
+    }
+
+    h2 {
+        color: #d62828;
+        font-size: 20px;
+        margin: 5px 0;
+    }
+
+    .content p {
+        font-size: 18px;
+        margin: 10px 0;
+    }
+
+    .qr-code {
+        margin-top: 20px;
+    }
+
+    .qr-code img {
+        width: 120px;
+        border-radius: 5px;
+        cursor: pointer; /* Indicates the image is clickable */
+    }
+
+    .committee-section1 {
+        margin-top: 20px;
+    }
+
+    .members {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .member {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        overflow: hidden;
+        cursor: pointer; /* Indicates the image is clickable */
+    }
+
+    .member img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    footer {
+        font-family: 'Noto Sans Devanagari', sans-serif;
+        background-color: #f4a261;
+        text-align: center;
+        color: #4a1a07;
+        margin: 0;
+        padding: 20px;
+    }
+
+    /* Full-Screen Overlay */
+    .overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+    }
+
+    .overlay img {
+        max-width: 90%;
+        max-height: 90%;
+        border-radius: 10px;
+    }
+
+    .overlay.active {
+        display: flex;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      header img {
+        position: static;
+        margin-top: 10px;
+      }
+      h1 {
+        font-size: 1.5em;
+      }
+      .invitation p {
+        font-size: 16px;
+      }
+      .container1 {
+        padding: 15px;
+      }
+      .header1 {
+        flex-direction: column;
+        text-align: center;
+      }
+      .header1 img {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 10px;
+      }
+      h1 {
+        font-size: 22px;
+      }
+      h2 {
+        font-size: 18px;
+      }
+      .content p {
+        font-size: 16px;
+      }
+      .qr-code img {
+        width: 100px;
+      }
+      .member {
+        width: 50px;
+        height: 50px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header {
+        padding: 15px;
+      }
+      h1 {
+        font-size: 1.2em;
+      }
+      .invitation p {
+        font-size: 14px;
+      }
+      .container1 {
+        padding: 10px;
+      }
+      .header1 img {
+        width: 50px;
+        height: 50px;
+      }
+      h1 {
+        font-size: 20px;
+      }
+      h2 {
+        font-size: 16px;
+      }
+      .content p {
+        font-size: 14px;
+      }
+      .qr-code img {
+        width: 80px;
+      }
+      .member {
+        width: 40px;
+        height: 40px;
+      }
+    }
